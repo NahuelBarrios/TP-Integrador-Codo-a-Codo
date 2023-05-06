@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Roboto;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    background-color: rgb(70, 81, 82);
+    flex-direction: column;
+}
+
+.contenedor {
+    margin: auto;
+    padding: 5px;
+}
+
+.headerNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: initial;
+    padding: 1rem 1rem 0.1rem 1rem;
+    width: 100%;
+
+}
+
+.contenedorLogo {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contenedorLogo a {
+    width: 50%;
+}
+
+.contenedorLogo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.contenedorLogo h2 {
+    color: white;
+}
+
+.navegacion {
+    width: 100%;
+
+}
+
+.listaNav {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+.linkNav {
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+
+.linkLaConferencia {
+    font-weight: bold;
+}
+
+.linkComprarTickets {
+    color: green;
+    font-weight: bold;
+}
+
+.laConferencia {
+    background: linear-gradient(to bottom, #00000085, #00000085), url("../assets/img/ba1.jpg");
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-right: initial;
+    text-align: right;
+    padding: 10px;
+    display: flex;
+}
+
+h1 {
+    padding: 30px 20px;
+    color: white;
+    font-size: 2rem;
+}
+
+.laConferencia p {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.botonOrador {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.botonTicket {
+    text-decoration: none;
+    color: white;
+    border: 1px solid black;
+    background-color: green;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.tituloConocerOradores {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.primerTitulo {
+    font-size: 0.6rem;
+}
+
+.oradores {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    row-gap: 20px;
+}
+
+.orador {
+    text-align: center;
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.573);
+}
+
+.imgOrador {
+    width: 100%;
+}
+
+.contenedorInformacionOrador {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.etiquetasOrador {
+    display: flex;
+    width: 75%;
+}
+
+.etiquetaPrimeraOrador {
+    background-color: rgb(250, 204, 78);
+    color: black;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.etiquetaSegundaOrador {
+    margin-left: 10px;
+    padding: 3px;
+    background-color: rgb(9, 115, 141);
+    color: white;
+    border-radius: 3px;
+}
+
+.etiquetaPrimeraOradorAda {
+    background-color: grey;
+    color: white;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.etiquetaSegundaOradorAda {
+    margin-left: 10px;
+    padding: 3px;
+    background-color: red;
+    color: white;
+    border-radius: 3px;
+}
+
+
+.nombreOrador,
+.informacionOrador {
+    text-align: left;
+}
+
+.lugarYFecha {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedorLugarYFechaImg img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.contenedorLugarYFechaInformacion {
+    background-color: rgb(54, 54, 54);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 10px;
+    padding: 10px;
+}
+
+.contenedorLugarYFechaAncla {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 3px;
+    width: 30%;
+    text-align: center;
+}
+
+.convierteteEnOrador {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+
+.descripcionConvierteteEnOrador span {
+    border-bottom: dashed rgb(15, 15, 15);
+}
+
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    width: 80%;
+    margin: auto;
+}
+
+.formulario textarea {
+    width: 100%;
+}
+
+.formularioNombreApellido {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formularioNombreApellido input {
+    width: 45%;
+}
+
+.parrafoFormulario {
+    text-align: left;
+    color: grey
+}
+
+.botonEnviar input {
+    width: 100%;
+    background-color: rgb(135, 212, 19);
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid rgb(135, 212, 19);
+}
+
+.footer {
+    background-color: rgb(42, 138, 138);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer a {
+    padding: 2px;
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px) and (max-width:1024px) {
+    .headerNavegacionYLogo {
+        display: flex;
+        width: 100%;
+        height: 10vh;
+    }
+
+    .headerNav {
+        width: 60%;
+        padding: 0;
+    }
+
+    .navegacion {
+        text-align: center;
+        margin: auto;
+    }
+
+    .listaNav {
+        width: 100%;
+        flex-direction: initial;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .laConferencia {
+        justify-content: end;
+    }
+
+    .contenedorLaConferencia {
+        margin-top: 6%;
+        width: 60%;
+        margin-right: 3%;
+    }
+
+    .oradores {
+        width: 60%;
+    }
+
+    .primerTitulo {
+        font-size: 1rem;
+    }
+
+    .segundoTitulo {
+        font-size: 2rem;
+    }
+
+    .lugarYFecha {
+        flex-direction: row;
+        height: 30vh;
+    }
+
+    .contenedorLugarYFechaImg {
+        height: 100%;
+        width: 50%;
+        border-right: 1px solid white;
+
+    }
+
+    .contenedorLugarYFechaImg img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .contenedorLugarYFechaInformacion {
+        height: 100%;
+        width: 50%;
+    }
+
+    .formulario {
+        width: 50%;
+    }
+
+    footer {
+        height: 8vh;
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .headerNavegacionYLogo {
+        display: flex;
+        width: 100%;
+        height: 10vh;
+    }
+
+    .headerNav {
+        width: 60%;
+        padding: 0;
+    }
+
+    .navegacion {
+        text-align: center;
+        margin: auto;
+    }
+
+    .listaNav {
+        width: 100%;
+        flex-direction: initial;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .laConferencia {
+        justify-content: end;
+        height: 80vh;
+    }
+
+    .contenedorLaConferencia {
+        margin-top: 15%;
+        width: 40%;
+        margin-right: 8%;
+    }
+
+    .primerTitulo {
+        font-size: 1.5rem;
+    }
+
+    .segundoTitulo {
+        font-size: 3rem;
+    }
+
+    .oradores {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .orador {
+        margin-left: 10px;
+    }
+
+    .lugarYFecha {
+        flex-direction: row;
+        height: 60vh;
+    }
+
+    .contenedorLugarYFechaImg {
+        height: 100%;
+        width: 50%;
+        border-right: 1px solid white;
+
+    }
+
+    .contenedorLugarYFechaImg img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .contenedorLugarYFechaInformacion {
+        height: 100%;
+        width: 50%;
+    }
+
+    .formulario {
+        width: 50%;
+    }
+
+    footer {
+        height: 8vh;
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
+}
+
+
+@media (min-width: 1281px) {
+    .headerNavegacionYLogo {
+        display: flex;
+        width: 100%;
+        height: 10vh;
+    }
+
+    .contenedorLogo {
+        justify-content: left;
+    }
+
+    .contenedorLogo a {
+        width: 40%;
+    }
+
+    .headerNav {
+        width: 60%;
+        padding: 0;
+    }
+
+    .navegacion {
+        text-align: center;
+        margin: auto;
+    }
+
+    .listaNav {
+        width: 100%;
+        flex-direction: initial;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .laConferencia {
+        justify-content: end;
+        height: 80vh;
+    }
+
+    .contenedorLaConferencia {
+        margin-top: 15%;
+        margin-right: 8%;
+        width: 50%;
+    }
+
+    .primerTitulo {
+        font-size: 1.5rem;
+    }
+
+    .segundoTitulo {
+        font-size: 3rem;
+    }
+
+    .oradores {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .orador {
+        margin-left: 10px;
+    }
+
+    .lugarYFecha {
+        flex-direction: row;
+        height: 60vh;
+    }
+
+    .contenedorLugarYFechaImg {
+        height: 100%;
+        width: 50%;
+        border-right: 1px solid white;
+
+    }
+
+    .contenedorLugarYFechaImg img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .contenedorLugarYFechaInformacion {
+        height: 100%;
+        width: 50%;
+    }
+
+    .formulario {
+        width: 50%;
+    }
+
+    .formularioNombreApellido input {
+        height: 1.5rem;
+    }
+
+    textarea {
+        height: 10rem;
+    }
+
+    footer {
+        height: 8vh;
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
+}

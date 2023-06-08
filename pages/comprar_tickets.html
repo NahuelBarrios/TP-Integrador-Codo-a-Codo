@@ -8,6 +8,7 @@
     <title>Proyecto Codo a Codo</title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/estilos.css">
+    <script src="../js/index.js"></script>
 </head>
 
 <body>
@@ -32,7 +33,70 @@
             </nav>
 
     </header>
-    <main>
+    <main class="Ticket">
+        <section>
+            <div class="descuentos">
+                <div class="descuento">
+                    <h2>Estudiante</h2>
+                    <h3>Tienen un descuento</h3>
+                    <h2>80%</h2>
+                    <p>* presentar documentacion</p>
+                </div>
+                <div class="descuento trainee">
+                    <h2>Trainee</h2>
+                    <h3>Tienen un descuento</h3>
+                    <h2>50%</h2>
+                    <p>* presentar documentacion</p>
+                </div>
+                <div class="descuento junior">
+                    <h2>Junior</h2>
+                    <h3>Tienen un descuento</h3>
+                    <h2>15%</h2>
+                    <p>* presentar documentacion</p>
+                </div>
+            </div>
+        </section>
+        <h1 class="TituloCompra">
+            <div>VENTA</div>
+            <div>VALOR DE TICKET $200</div>
+        </h1>
+        <section class="formularioTicket">
+            <form class="formulario" onsubmit="calculateTicketPriceTotal(); return false;">
+                <div class="formularioNombreApellido">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Apellido">
+                </div>
+                <div class="formularioEmail">
+                    <input type="email" placeholder="Correo">
+                </div>
+                <div class="cantidadYCategoria">
+                    <div class="cantidad">
+                        <label for="cantidad">Cantidad</label>
+                        <input type="number" placeholder="Cantidad" id="cantidad" name="cantidad">
+                    </div>
+                    <div class="categoria">
+                        <label for="opcion">Categoria</label>
+                        <select name="opcion" id="categoria">
+                            <option value="Estudiante">Estudiante</option>
+                            <option value="Trainee">Trainee</option>
+                            <option value="Junior">Junior</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="totalAPagar">
+                    <p>Total a Pagar: $<span id="resultado"></span></p>
+                </div>
+
+                <div class="botonTicketBorrar">
+                    <div class="botonesTickets">
+                        <input type="submit" value="Borrar">
+                    </div>
+                    <div class="botonesTickets">
+                        <input type="submit" value="Resumen">
+                    </div>
+                </div>
+            </form>
+        </section>
 
     </main>
 

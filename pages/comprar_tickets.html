@@ -61,22 +61,23 @@
             <div>VALOR DE TICKET $200</div>
         </h1>
         <section class="formularioTicket">
-            <form class="formulario" onsubmit="calculateTicketPriceTotal(); return false;">
+            <form class="formulario">
                 <div class="formularioNombreApellido">
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Apellido">
+                    <input type="text" placeholder="Nombre" id="nombre" required>
+                    <input type="text" placeholder="Apellido" id="apellido" required>
                 </div>
                 <div class="formularioEmail">
-                    <input type="email" placeholder="Correo">
+                    <input type="email" placeholder="Correo" id="email" required>
                 </div>
                 <div class="cantidadYCategoria">
                     <div class="cantidad">
                         <label for="cantidad">Cantidad</label>
-                        <input type="number" placeholder="Cantidad" id="cantidad" name="cantidad">
+                        <input type="number" placeholder="Cantidad" id="cantidad" name="cantidad" required>
                     </div>
                     <div class="categoria">
                         <label for="opcion">Categoria</label>
-                        <select name="opcion" id="categoria">
+                        <select name="opcion" id="categoria" required>
+                            <option value="Seleccionar" disabled selected>Seleccione una Categoria</option>
                             <option value="Estudiante">Estudiante</option>
                             <option value="Trainee">Trainee</option>
                             <option value="Junior">Junior</option>
@@ -89,10 +90,10 @@
 
                 <div class="botonTicketBorrar">
                     <div class="botonesTickets">
-                        <input type="submit" value="Borrar">
+                        <input type="button" value="Borrar" onclick="borrarCampos()">
                     </div>
                     <div class="botonesTickets">
-                        <input type="submit" value="Resumen">
+                        <input type="button" value="Resumen" onclick="calculateTicketPriceTotal()">
                     </div>
                 </div>
             </form>

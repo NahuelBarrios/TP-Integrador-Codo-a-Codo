@@ -1,10 +1,18 @@
 function calculateTicketPriceTotal() {
     const category = document.getElementById("categoria").value;
     const quantity = document.getElementById("cantidad").value;
+    const name = document.getElementById("nombre").value;
+    const lastName = document.getElementById("apellido").value;
+    const email = document.getElementById("email").value;
 
-    const total = getSummary(quantity, category);
-
-    console.log(total)
+    if (quantity > 0 && category != 'Seleccionar') {
+        const total = getSummary(quantity, category);
+        document.getElementById("resultado").textContent = total;
+        alert("Felicidades!!\n" + name + " " + lastName + "\nEnviamos a tu email: " + email + " los detalles de la compra. \nTotal: " + total);
+    } else {
+        alert("Ingrese los datos adecuadamente.")
+    }
+    return;
 }
 
 function getSummary(cantTicket, category) {
@@ -15,8 +23,7 @@ function getSummary(cantTicket, category) {
 
         totalResume = (valorTicket * cantTicket);
         totalResume = totalResume - (totalResume * categoryDiscount) / 100;
-        document.getElementById("resultado").textContent = totalResume;
-
+        return totalResume;
     }
 
 }
@@ -37,4 +44,13 @@ function getCategoryDiscount(category) {
             return discount;
             break;
     }
+}
+
+function borrarCampos() {
+    document.getElementById("nombre").value = "";
+    document.getElementById("apellido").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("cantidad").value = "";
+    document.getElementById("categoria").value = "Seleccionar";
+    document.getElementById("resultado").textContent = "";
 }

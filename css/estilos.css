@@ -300,9 +300,12 @@ h1 {
 }
 
 .descuento {
-    border: 2px solid rgb(17, 29, 194);
+    border: 3px solid rgb(17, 29, 194);
+    display: flex;
+    flex-direction: column;
     margin: 0.5em auto;
     padding: 1rem;
+    row-gap: 1rem;
 }
 
 .trainee {
@@ -319,6 +322,11 @@ h1 {
     text-align: center;
 }
 
+.tituloVenta {
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
 .formularioEmail input {
     width: 100%;
 }
@@ -331,15 +339,14 @@ h1 {
 .cantidad {
     display: flex;
     flex-direction: column;
-    margin: auto;
     width: 40%;
 }
 
 .categoria {
     display: flex;
     flex-direction: column;
-    margin: auto;
     width: 40%;
+    margin: auto;
 }
 
 .totalAPagar {
@@ -355,6 +362,20 @@ h1 {
 
 .formularioTicket {
     margin: 1rem;
+}
+
+.formularioTicket .formulario {
+    row-gap: 0.5rem;
+}
+
+.formularioTicket .formulario input {
+    height: 1.5rem;
+    border-radius: 3px;
+}
+
+.formularioTicket .formulario select {
+    height: 1.5rem;
+    border-radius: 3px;
 }
 
 .botonTicketBorrar {
@@ -450,7 +471,7 @@ h1 {
     }
 
     footer {
-        height: 8vh;
+        height: 12vh;
     }
 
     .footer {
@@ -459,6 +480,45 @@ h1 {
         align-items: center;
         height: 100%;
     }
+
+    .descuentos {
+        flex-direction: row;
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .descuento {
+        row-gap: 1.5rem;
+
+    }
+
+    .formularioTicket .formulario {
+        row-gap: 1.5rem;
+        width: 80%;
+    }
+
+    .formularioTicket .formulario input {
+        height: 2.6rem;
+        border-radius: 3px;
+    }
+
+    .formularioTicket .formulario select {
+        height: 2.6rem;
+        border-radius: 3px;
+    }
+
+    .totalAPagar {
+        height: 3.2rem;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .totalAPagar p {
+        margin: 1rem;
+    }
+
+
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
@@ -541,7 +601,7 @@ h1 {
     }
 
     footer {
-        height: 8vh;
+        height: 12vh;
     }
 
     .footer {
@@ -549,6 +609,43 @@ h1 {
         justify-content: space-around;
         align-items: center;
         height: 100%;
+    }
+
+    .descuentos {
+        flex-direction: row;
+        width: 70%;
+        margin: 1rem auto;
+    }
+
+    .descuento {
+        row-gap: 1.5rem;
+
+    }
+
+    .formularioTicket .formulario {
+        row-gap: 1.5rem;
+        width: 60%;
+    }
+
+    .formularioTicket .formulario input {
+        height: 2.6rem;
+        border-radius: 3px;
+    }
+
+    .formularioTicket .formulario select {
+        height: 2.6rem;
+        border-radius: 3px;
+    }
+
+    .totalAPagar {
+        height: 3.2rem;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .totalAPagar p {
+        margin: 1rem;
     }
 }
 
@@ -649,7 +746,7 @@ h1 {
     }
 
     footer {
-        height: 8vh;
+        height: 16vh;
     }
 
     .footer {
@@ -657,5 +754,41 @@ h1 {
         justify-content: space-around;
         align-items: center;
         height: 100%;
+    }
+
+    .descuentos {
+        flex-direction: row;
+        width: 70%;
+        margin: 1rem auto;
+    }
+
+    .descuento {
+        row-gap: 1.5rem;
+    }
+
+    .formularioTicket .formulario {
+        row-gap: 1.5rem;
+        width: 60%;
+    }
+
+    .formularioTicket .formulario input {
+        height: 2.6rem;
+        border-radius: 3px;
+    }
+
+    .formularioTicket .formulario select {
+        height: 2.6rem;
+        border-radius: 3px;
+    }
+
+    .totalAPagar {
+        height: 3.2rem;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .totalAPagar p {
+        margin: 1rem;
     }
 }

@@ -8,7 +8,7 @@ function calculateTicketPriceTotal() {
     if (quantity > 0 && category != 'Seleccionar') {
         const total = getSummary(quantity, category);
         document.getElementById("resultado").textContent = total;
-        alert("Felicidades!!\n" + name + " " + lastName + "\nEnviamos a tu email: " + email + " los detalles de la compra. \nTotal: " + total);
+        alert("Felicidades!!\n" + name.trim() + " " + lastName.trim() + "\nEnviamos a tu email: " + email.trim() + " los detalles de la compra. \nTotal: " + total);
     } else {
         alert("Ingrese los datos adecuadamente.")
     }
